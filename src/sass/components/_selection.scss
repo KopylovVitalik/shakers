@@ -1,0 +1,47 @@
+.selection {
+  padding: 64px 300px 78px;
+  background-color: $hero-bg-color;
+  text-align: center;
+  &__title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.28;
+    letter-spacing: -1.3px;
+    margin-bottom: 25px;
+  }
+  &__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: -0.6px;
+    color: $light-text;
+    margin-bottom: 37px;
+  }
+}
+
+@include desktop {
+  .selection {
+    padding: 48px 200px 48px;
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+
+@include tablet {
+  .selection {
+    padding: 32px 50px 32px;
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+
+@include mobile {
+  .selection {
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

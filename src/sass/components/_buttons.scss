@@ -1,0 +1,57 @@
+.btn {
+  display: inline-block;
+  height: 60px;
+  padding: 0 37px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #345477;
+  background-color: $btn-bg;
+  line-height: 60px;
+  color: $btn-color;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: 0.4s linear;
+  &:hover {
+    color: $hero-bg-color;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  @include desktop {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    font-size: 16px;
+  }
+
+  @include tablet {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+}
+
+.video-player-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 226px;
+  line-height: 60px;
+  background-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  color: #95c9fb;
+  padding: 0 20px;
+  text-decoration: underline;
+  span {
+    display: block;
+    margin-right: 10px;
+  }
+  img {
+    height: 16px;
+    width: 16px;
+  }
+}
